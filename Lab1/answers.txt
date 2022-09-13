@@ -1,0 +1,16 @@
+Q1) https://github.com/adit333
+Q2) requests version: 2.28.1
+Q3) requests version: 2.28.1
+Q4) The requests package being used is differnt in venv.
+    If not in venv, it uses the requests package installed in the system instead.
+Q5) Status code 301 is returned when visting http://google.com/ using curl.
+Q6) Code 301 is returned with curl -i http://google.com/teapot
+    Code 418 is returned with curl -iL http://google.com/teapot
+    Code 418 is returned with curl -i  https://www.google.com/teapot
+Q7) The request method changed from GET to POST.
+There was also some additoinal information in the response. e.g.:
+```
+<DT>X: <i>&lt;type 'instance'&gt;</i>
+<DD>MiniFieldStorage('X', 'Y')
+```
+Q8)
