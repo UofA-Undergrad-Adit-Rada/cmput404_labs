@@ -1,0 +1,9 @@
+Q1) By specifying socket.SOCK_STREAM
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        ...
+
+Q2)
+
+Q3) By using setsockopt:
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
