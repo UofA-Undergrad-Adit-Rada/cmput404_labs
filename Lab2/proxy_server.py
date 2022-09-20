@@ -2,6 +2,8 @@
 import socket
 import time
 
+from multiprocessing import Process
+
 #define address & buffer size
 HOST = ""
 PORT = 8001
@@ -25,13 +27,13 @@ def main():
             
             #recieve data, wait a bit, then send it back
             full_data = conn.recv(BUFFER_SIZE)
-            data_from_google = connect_to_host_and_get_data()
-            time.sleep(0.5)
-            conn.sendall(data_from_google)
+            p = Process(target=connect_to_host_and_get_data, args=(conn,))
+
+            p.start()
             conn.close()
+      
 
-
-def connect_to_host_and_get_data():
+def connect_to_host_and_get_data(conn):
     #QUESTION 2
     #connect to google
     host = 'www.google.com'
@@ -50,7 +52,7 @@ def connect_to_host_and_get_data():
             if not data: break
             data_from_host += data
 
-    return data_from_host
+    conn.sendall(data_from_host)
 
 
 if __name__ == "__main__":
