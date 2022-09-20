@@ -2,8 +2,15 @@ Q1) By specifying socket.SOCK_STREAM
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         ...
 
-Q2)
+Q2) A server socket listens on a host and a port, receives requests,
+     and then sends a response to the client who initiated the socket connection.
+     The client socket is what sends a request to that server socket, and waits for a response.
 
 Q3) By using setsockopt:
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
+Q4) We get the client socket, the client's address and port.
+
+Q5) The bytes sent by the client.
+
+Q6) https://github.com/adit333/cmput404_labs/tree/master/Lab2
