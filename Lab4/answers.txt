@@ -1,1 +1,23 @@
-Q1) 
+Q1)  https://github.com/adit333/cmput404_labs/tree/master/Lab4
+
+Q2) A Django debug page that says: "The install worked successfully! Congratulations!"
+
+Q3) When I navigate to /: "Page Not Found 404"
+    When I navigate to poll/: "Hello, world. You're at the polls index."
+
+Q4) Migrations are how Django stores changes to our models (and thus our database schema) - they’re files on disk.
+
+Q5) You see options for Users and Groups.
+    To make custom models appear in the admin, you need to register them with the admin site.
+
+Q6) You're looking at question 38.
+    You're looking at the results of question 38.
+    You're voting on question 38.
+    Page not found (404) with a string instead of a nubmer.
+    Add <str::id> to the url.
+
+Q7) The problem with this hardcoded, tightly-coupled approach is that it becomes
+    challenging to change URLs on projects with a lot of templates.
+
+Q8) Generic views abstract common patterns to the point where we
+    don’t even need to write Python code to write an app.
