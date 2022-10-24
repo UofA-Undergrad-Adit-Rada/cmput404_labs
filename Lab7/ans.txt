@@ -1,0 +1,34 @@
+Question 0: What is the URL of your python flask_restfull code on github???
+A: https://github.com/adit333/cmput404_labs/tree/master/Lab7
+
+Question 1: How are Flask and Django different? What does Django provide for you that Flask does not?
+A: Flask is a microframework, meaning it is a lightweight framework that does not have a lot of features.
+    Django is a full framework, meaning it has a lot of features.
+    Django provides a lot of features that Flask does not, such as an admin interface,
+    a database abstraction layer, and a templating system.
+
+Question 2: What does REST stand for? When I say something is RESTful, what does that mean?
+A: REST stands for Representational State Transfer.
+    When I say something is RESTful, it means that it follows the REST architectural style.
+
+Question 3: What does CRUD stand for? For each letter in CRUD, give the associated HTTP method.
+A: CRUD stands for Create, Read, Update, and Delete.
+    Create - POST
+    Read - GET
+    Update - PUT
+    Delete - DELETE
+
+Question 4: What do HTTP 1XX Status Codes mean? HTTP 2xx? HTTP 3xx? HTTP 4xx? HTTP 5xx?
+A: HTTP 1XX Status Codes: informationsal codes; mean that the request was received and the process is continuing.
+    HTTP 2XX Status Codes: sucess codes; mean that the request was successfully received, understood, and accepted.
+    HTTP 3XX Status Codes: redirection codes; mean that further action needs to be taken in order to complete the request.
+    HTTP 4XX Status Codes: client error codes; mean that the request contains bad syntax or cannot be fulfilled.
+    HTTP 5XX Status Codes: server error codes; mean that the server failed to fulfill an apparently valid request.
+
+Question 5: What is an XSS attack? Provide one way a site can be vulneratble to an XSS attack.
+A: XSS stands for Cross-Site Scripting.
+    A site can be vulnerable to an XSS attack if it does not validate and check user input.
+
+Question 6: What does CORS stand for? What situation in web application development will you need to implement CORS protection?
+A: CORS stands for Cross-Origin Resource Sharing.
+    CORS protection is needed when a web application needs to access resources from a different domain.
